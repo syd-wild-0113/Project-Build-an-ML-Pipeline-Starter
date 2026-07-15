@@ -5,8 +5,12 @@ This script download a URL to a local destination
 import argparse
 import logging
 import os
+import sys
 
 import wandb
+
+#if project_root not in sys.path:
+#    sys.path.insert(0, project_root)
 
 from wandb_utils.log_artifact import log_artifact
 
